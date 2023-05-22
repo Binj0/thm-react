@@ -3,6 +3,7 @@ import {NavItem} from "../types/navigation/NavItem";
 export let navigationData: Array<NavItem> = [
     {
         navTitle: "Studium",
+        pagePath: "",
         subNavs: [
             {
                 subNavTitle: "Unsere Studienangebote",
@@ -124,12 +125,13 @@ export let navigationData: Array<NavItem> = [
         ]
     }, {
         navTitle: "Weiterbildung",
+        pagePath: "",
         subNavs: [
             {
                 subNavTitle: "Test",
                 subNavItems: [
                     {
-                        title: "Test",
+                        title: "Test longggggggggggggggggggg",
                         page: "",
                         icon: "school"
                     }
@@ -138,9 +140,10 @@ export let navigationData: Array<NavItem> = [
         ]
     }, {
         navTitle: "Forschung & Transfer",
+        pagePath: "",
         subNavs: [
             {
-                subNavTitle: "Test",
+                subNavTitle: "Test-",
                 subNavItems: [
                     {
                         title: "Test",
@@ -152,6 +155,7 @@ export let navigationData: Array<NavItem> = [
         ]
     }, {
         navTitle: "Hochschule",
+        pagePath: "",
         subNavs: [
             {
                 subNavTitle: "Test",
@@ -166,6 +170,7 @@ export let navigationData: Array<NavItem> = [
         ]
     }, {
         navTitle: "International",
+        pagePath: "",
         subNavs: [
             {
                 subNavTitle: "Test",

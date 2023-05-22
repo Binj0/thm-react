@@ -1,11 +1,11 @@
 import {useState} from "react";
-import {NavItem} from "../../types/navigation/NavItem";
 import {navigationData} from "../../data/navigationData";
 import {SubNav} from "../../types/navigation/SubNav";
 import {SubNavItem} from "../../types/navigation/SubNavItem";
 import Search from "./search";
 import LocaleSelector from "./localeSelector";
 import {gsap} from "gsap";
+import SubNavTile from "./subNavTile";
 
 export default function Navigation() {
 
@@ -25,10 +25,12 @@ export default function Navigation() {
     }
 
     let handleNavClick = (index: number) => {
+        //TODO
         setNavSelectedIndex(index);
     }
 
     let handleSubNavClick = () => {
+        //TODO
         console.log("subnav click");
     }
 
@@ -47,13 +49,13 @@ export default function Navigation() {
     }
 
     return (
-        <nav className={"bg-[var(--background)] sticky top-0"}>
+        <nav className={"bg-[var(--background)] sticky top-0 z-20"}>
             <div id={"headerNavigation"} className={"flex items-center justify-between shadow-md p-4"}>
                 <img id={"thmLogo"} src="/thm.svg" alt="THM Logo" className="h-14 mr-4"/>
                 <ul className="flex items-center">
                     {navigationData.map((navItem, index) => <li key={"navItem" + index} className={"pr-2"}>
                         <a onMouseOver={() => handleMouseOver(index)} onMouseLeave={handleMouseLeave}
-                           onClick={() => handleNavClick(index)}
+                           onClick={() => handleNavClick(index)} href={navItem.pagePath}
                            className={"text-sm hover-underline-animation cursor-pointer mx-3"}>{navItem["navTitle"].toUpperCase()}</a>
                     </li>)}
                 </ul>
@@ -67,11 +69,11 @@ export default function Navigation() {
                     <LocaleSelector></LocaleSelector>
                 </div>
             </div>
-            <div className={"flex justify-center absolute"}>
+                <div className={"flex justify-center absolute z-10"}>
                 <div
-                    className={" shadow-lg origin-top ease-in-out transition-transform " + (navHoverIndex === -1 ? 'scale-y-0 delay-500' : 'scale-y-1 delay-0')}>
+                    className={"shadow-lg origin-top ease-in-out transition-transform " + (navHoverIndex === -1 ? 'scale-y-0 max-h-0 delay-500' : 'scale-y-1 delay-0')}>
                     <div onMouseEnter={() => handleMouseOver(previousNavHoverIndex)} onMouseLeave={handleMouseLeave}
-                         className="bg-[var(--dark-blue-transp)] flex w-full backdrop-blur-md">
+                         className="bg-[var(--dark-blue-90)] flex w-full backdrop-blur-md">
                         <div className={"w-[100vw] p-4 flex justify-stretch pl-[16%] pr-[16%]"}>
                             {previousNavHoverIndex >= 0 &&
                                 (navigationData[previousNavHoverIndex].subNavs.map((subNav: SubNav) => {
@@ -79,14 +81,7 @@ export default function Navigation() {
                                             <h3 className={"text-sm font-semibold mb-2 p-1 rounded-md text-[var(--text-on-dark-blue)] bg-[var(--dark-blue)]"}>{subNav.subNavTitle}</h3>
                                             <ul>
                                                 {subNav.subNavItems.map((subNavItem: SubNavItem) => {
-                                                    return (<li>
-                                                        <button
-                                                            className="hover:bg-[var(--green)] text-[var(--text-on-dark-blue)] font-semibold text-lg px-1 pb-0.5 rounded-md w-full text-start flex items-center">
-                                                            <span
-                                                                className={"material-icons pr-2 text-sm"}>{subNavItem.icon}</span>
-                                                            <span className={"text-xs"}>{subNavItem.title}</span>
-                                                        </button>
-                                                    </li>)
+                                                    return (SubNavTile(subNavItem));
                                                 })}
                                             </ul>
                                         </div>

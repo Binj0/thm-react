@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Navigation from "./components/navigation/navigation";
 import LandingBanner from "./components/landingBanner";
 import LandingGrid from "./components/landingGrid";

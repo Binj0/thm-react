@@ -7,9 +7,9 @@
     --green: #80ba24;
     --light-green: #dfeec8;
     --dark-blue: #394a59;
-    --dark-blue-transp: rgba(57, 74, 89, 0.90);
+    --dark-blue-90: rgba(57, 74, 89, 0.90);
     --light-grey: #dfe5e6;
-    --light-grey-transp: rgba(223, 229, 230, 0.5);
+    --light-grey-50: rgba(223, 229, 230, 0.5);
 
     --text-on-background: #121212;
     --text-on-dark-blue: #ffffff;
