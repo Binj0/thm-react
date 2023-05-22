@@ -2,8 +2,9 @@ import {SubNav} from "./SubNav";
 
 export interface NavItem {
 
-    navTitle: String,
-    iconSrc?: String,
+    navTitle: string,
+    iconSrc?: string,
+    pagePath: string,
     subNavs: SubNav[]
 
 
