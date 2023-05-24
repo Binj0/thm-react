@@ -7,5 +7,4 @@ export interface NavItem {
     pagePath: string,
     subNavs: SubNav[]
 
-
 }

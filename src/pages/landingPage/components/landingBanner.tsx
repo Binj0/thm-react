@@ -28,12 +28,12 @@ export default function LandingBanner() {
                     <span className="material-icons text-3xl pt-1 px-3">navigate_next</span>
                 </button>
             </div>
-            <div className={"bg-[var(--dark-blue-90)] rounded-lg aspect-[22.3/9] p-2"}>
-                <div className="overflow-hidden">
+            <div className={"bg-[var(--dark-blue-90)] rounded-lg "}>
+                <div className="overflow-clip">
                     {slideIndex === 0 ?
-                        <img src={require("../assets/images/Header_THMApp.jpg")} alt="THM Header"
+                        <img src={require("../../../assets/images/Header_THMApp.jpg")} alt="THM Header"
                              className="w-full rounded-sm"/>
-                        : <img src={require("../assets/images/Slider_GettingStarted1.jpg")} alt="THM Header"
+                        : <img src={require("../../../assets/images/Slider_GettingStarted1.jpg")} alt="THM Header"
                                className="w-full rounded-sm"/>
                     }
                 </div>

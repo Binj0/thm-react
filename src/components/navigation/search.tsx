@@ -55,16 +55,16 @@ export default function Search() {
         <div
             className={"bg-[var(--light-grey)] rounded-full mr-2 overflow-clip flex active:border-2 h-[40px] border-2  " + (searchHasFocus ? "border-[var(--dark-blue)]" : "border-transparent")}>
             <input id={"search-field"} type="text" ref={inputRef}
-                   className={"outline-0 bg-transparent w-0 " + (searchOpen ? "pl-4" : "pl-1.5")}
+                   className={"outline-0 bg-transparent w-0 " + (searchOpen ? "pl-4" : "pl-0")}
                    onFocus={setSearchFocus} onBlur={setSearchBlur} placeholder="Suche"
                    onInput={event => onSearchInput(event)}/>
-            <button className="hover:bg-[var(--light-grey)] flex items-center pr-1.5"
+            <button className="hover:bg-[var(--light-grey)] flex items-center px-1.5 rounded-full"
                     onClick={toggleSearch}>
                 <span className="material-icons text-[var(--dark-blue)]">{searchOpen ? "close" : "search"}</span>
             </button>
         </div>
-        {searchContent.length > 0 ? <div>
-            <ul className={"absolute min-w-[238px] bg-[var(--dark-blue-90)] backdrop-blur-md rounded-lg p-4 mt-8 shadow-xl"}>
+        {searchContent.length > 0 ? <div className={"max-h-12 overflow-scroll block"}>
+            <ul className={"absolute max-h-[35rem] overflow-scroll min-w-[238px] bg-[var(--dark-blue-90)] backdrop-blur-md rounded-lg p-4 mt-8 shadow-xl"}>
                 {searchContent.map((subNavItem) => {
                     return (SubNavTile(subNavItem));
                 })}

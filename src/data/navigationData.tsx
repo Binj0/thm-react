@@ -3,7 +3,7 @@ import {NavItem} from "../types/navigation/NavItem";
 export let navigationData: Array<NavItem> = [
     {
         navTitle: "Studium",
-        pagePath: "",
+        pagePath: "studium",
         subNavs: [
             {
                 subNavTitle: "Unsere Studienangebote",
@@ -121,6 +121,60 @@ export let navigationData: Array<NavItem> = [
                     },
 
                 ]
+            },
+            {
+                subNavTitle: "Sie starten Iht Studium",
+                subNavItems: [
+                    {title: "AStA", page: "", icon: "school"},
+                    {title: "Brückenkurse", page: "", icon: "school"},
+                    {title: "Campus", page: "", icon: "school"},
+                    {title: "Chipkarte", page: "", icon: "school"},
+                    {title: "Fachschaften", page: "", icon: "school"},
+                    {title: "IT-Services", page: "", icon: "school"},
+                    {title: "STEP - Das Studieneinführungsprogramm", page: "", icon: "school"},
+                    {title: "Studienfinanzierung", page: "", icon: "school"},
+                    {title: "Stunden-, Raum- und Klausurpläne", page: "", icon: "school"},
+                    {title: "Wohnen", page: "", icon: "school"},
+                ]
+            },
+            {
+                subNavTitle: "Sie studieren",
+                subNavItems: [
+                    { title: "Antidiskriminierungsberatung", page: "", icon: "school" },
+                    { title: "Beurlaubung", page: "", icon: "school" },
+                    { title: "Chipkarte", page: "", icon: "school" },
+                    { title: "Familiengerechtes Studium", page: "", icon: "school" },
+                    { title: "Hochschulbibliothek", page: "", icon: "school" },
+                    { title: "Hochschulsport", page: "", icon: "school" },
+                    { title: "IT-Services", page: "", icon: "school" },
+                    { title: "Teilzeitstudium", page: "", icon: "school" },
+                    { title: "Lernräume", page: "", icon: "school" },
+                    { title: "Meinungsportal für Studierende", page: "", icon: "school" },
+                    { title: "Modulhandbücher", page: "", icon: "school" },
+                    { title: "E-Campus", page: "", icon: "school" },
+                    { title: "Probleme im Studium", page: "", icon: "school" },
+                    { title: "Prüfungscoaching", page: "", icon: "school" },
+                    { title: "Prüfungsordnung", page: "", icon: "school" },
+                    { title: "Rückmeldung", page: "", icon: "school" },
+                    { title: "Semester- und Vorlesungszeiten", page: "", icon: "school" },
+                    { title: "Studienberatung", page: "", icon: "school" },
+                    { title: "Studienfinanzierung", page: "", icon: "school" },
+                    { title: "Studiengangwechsel", page: "", icon: "school" },
+                    { title: "Stunden-, Raum- und Klausurpläne", page: "", icon: "school" },
+                    { title: "Zusatzangebote", page: "", icon: "school" },
+                ]
+            },
+            {
+                subNavTitle: "Sie beenden Ihr Studium",
+                subNavItems: [
+                    { title: "Alumni", page: "", icon: "school" },
+                    { title: "Career Service", page: "", icon: "school" },
+                    { title: "Exmatrikulation", page: "", icon: "school" },
+                    { title: "Forschung & Promotion", page: "", icon: "school" },
+                    { title: "Stellenangebote an der THM", page: "", icon: "school" },
+                    { title: "Weiterbildung", page: "", icon: "school" },
+                    { title: "Weiterstudieren", page: "", icon: "school" }
+                ]
             }
         ]
     }, {
@@ -128,13 +182,30 @@ export let navigationData: Array<NavItem> = [
         pagePath: "",
         subNavs: [
             {
-                subNavTitle: "Test",
+                subNavTitle: "Weiterbildungsangebote",
                 subNavItems: [
-                    {
-                        title: "Test longggggggggggggggggggg",
-                        page: "",
-                        icon: "school"
-                    }
+                    { title: "Fernstudiengänge", page: "", icon: "" },
+                    { title: "Masterstudiengänge", page: "", icon: "" },
+                    { title: "Zertifikatslehrgänge", page: "", icon: "" },
+                ]
+            },
+            {
+                subNavTitle: "Angebote für Beschäftigte der THM",
+                subNavItems: [
+                    { title: "Akademische Personalentwicklung", page: "", icon: "" },
+                    { title: "Allgemeine Personalentwicklung", page: "", icon: "" },
+                    { title: "Zusatzangebot für studentische Beschäftigte", page: "", icon: "" },
+                ]
+            },
+            {
+                subNavTitle: "Foren - Tagungen - Messen",
+                subNavItems: [
+                    { title: "BIM KONGRESS", page: "", icon: "" },
+                    { title: "Gießener Bauforum", page: "", icon: "" },
+                    { title: "Industrie 4.0 Kongress", page: "", icon: "" },
+                    { title: "Massivbau Kompaktseminar", page: "", icon: "" },
+                    { title: "Ringvorlesung", page: "", icon: "" },
+                    { title: "Sonstige Veranstaltungen", page: "", icon: "" }
                 ]
             }
         ]
@@ -143,13 +214,49 @@ export let navigationData: Array<NavItem> = [
         pagePath: "",
         subNavs: [
             {
-                subNavTitle: "Test-",
+                subNavTitle: "Forschung",
                 subNavItems: [
-                    {
-                        title: "Test",
-                        page: "",
-                        icon: "school"
-                    }
+                    { title: "Forschungsprofil", page: "", icon: "" },
+                    { title: "Kompetenzzentren", page: "", icon: "" },
+                    { title: "Forschungsförderung", page: "", icon: "" },
+                    { title: "Forschungsinformationssystem", page: "", icon: "" },
+                    { title: "Forschungsdatenmanagement", page: "", icon: "" },
+                    { title: "Gute wissenschaftliche Praxis", page: "", icon: "" },
+                ]
+            },
+            {
+                subNavTitle: "Transfer",
+                subNavItems: [
+                    { title: "Wissens- und Technologietransfer", page: "", icon: "" },
+                    { title: "Kooperation, Auftragsforschung, Dienstleistung", page: "", icon: "" },
+                    { title: "Erfindungen, Patente und Schutzrechte", page: "", icon: "" },
+                    { title: "Existenzgründungen", page: "", icon: "" },
+                    { title: "Infrastruktur & Makerspaces", page: "", icon: "" },
+                    { title: "Messebeteiligung", page: "", icon: "" },
+                    { title: "Projekte", page: "", icon: "" },
+                ]
+            },
+            {
+                subNavTitle: "Wissenschaftlicher Nachwuchs",
+                subNavItems: [
+                    { title: "Promovieren über die THM", page: "", icon: "" },
+                    { title: "Strukturierte Doktorandenausbildung", page: "", icon: "" },
+                    { title: "Qualifizierung", page: "", icon: "" },
+                    { title: "Interdisziplinäres Promovierendenkolloquium", page: "", icon: "" },
+                    { title: "Mentoring Hessen", page: "", icon: "" },
+                    { title: "Nachwuchsförderung", page: "", icon: "" },
+                    { title: "Abgeschlossene Promotionen", page: "", icon: "" },
+                ]
+            },
+            {
+                subNavTitle: "Kontakt & Allgemeines",
+                subNavItems: [
+                    { title: "Referat Forschung und wissenschaftlicher Nachwuchs", page: "", icon: "" },
+                    { title: "Referat Transfer", page: "", icon: "" },
+                    { title: "Aktuelles", page: "", icon: "" },
+                    { title: "Veranstaltungen Forschung & Transfer", page: "", icon: "" },
+                    { title: "Veranstaltungen Makerspaces & StartUps", page: "", icon: "" },
+                    { title: "Stiftung fit", page: "", icon: "" }
                 ]
             }
         ]
